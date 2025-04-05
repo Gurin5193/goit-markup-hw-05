@@ -453,48 +453,107 @@
         </div>
       </div>
     </footer>
+    <!--Modal window-->
     <div class="modal-ovelay-wrapper">
       <div class="modal-wrapper">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="submit">
           <svg class="svg-modal" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="title-modal">Leave your contacts and we will call you back</p>
 
         <form name="modal">
-          <div class="label-input-wrapper">
-            <label for="username" class="modal-label">Name</label>
-            <input
-              type="text"
-              class="modal-input"
-              name="username"
-              id="username"
-              required
-            />
-          </div>
+          <fieldset class="fieldset-input">
+            <legend class="legend-title">
+              <p class="title-modal">
+                Leave your contacts and we will call you back
+              </p>
+            </legend>
 
-          <div class="label-input-wrapper">
-            <label for="username" class="modal-label">Name</label>
-            <input
-              type="text"
-              class="modal-input"
-              name="username"
-              id="username"
-              required
-            />
-          </div>
+            <div class="label-input-wrapper">
+              <label for="username" class="modal-label">Name</label>
 
-          <div class="label-input-wrapper">
-            <label for="username" class="modal-label">Name</label>
-            <input
-              type="text"
-              class="modal-input"
-              name="username"
-              id="username"
-              required
-            />
-          </div>
+              <div class="svg-input-wrapper">
+                <input
+                  type="text"
+                  class="modal-input"
+                  name="username"
+                  id="username"
+                  autocomplete="name"
+                  required
+                />
+                <svg class="svg-modal-input" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="label-input-wrapper">
+              <label for="usertel" class="modal-label">Phone</label>
+
+              <div class="svg-input-wrapper">
+                <input
+                  type="tel"
+                  class="modal-input"
+                  name="usertel"
+                  id="usertel"
+                  autocomplete="tel"
+                  required
+                />
+                <svg class="svg-modal-input" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="label-input-wrapper">
+              <label for="useremail" class="modal-label">Email</label>
+
+              <div class="svg-input-wrapper">
+                <input
+                  type="email"
+                  class="modal-input"
+                  name="useremail"
+                  id="useremail"
+                  autocomplete="email"
+                  required
+                />
+                <svg class="svg-modal-input" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="label-input-wrapper">
+              <label for="usercomment" class="modal-label">Comment</label>
+              <textarea
+                name="userarea"
+                id="usercomment"
+                class="modal-area"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+
+            <div class="label-input-wrapper">
+              <input
+                type="checkbox"
+                name="polici"
+                id="polici"
+                class="modal-checkbox visually-hidden"
+                value="true"
+              />
+              <label for="polici" class="modal-label"
+                ><span class="modal-span"
+                  ><svg class="svg-modal-span" width="10" height="8">
+                    <use href="./images/icons.svg#icon-Vector"></use></svg
+                ></span>
+                I accept the terms and conditions of the
+                <a href="" class="modal-label-polici">Privacy Policy</a></label
+              >
+            </div>
+          </fieldset>
+
+          <button class="btn-order" type="submit">Send</button>
         </form>
       </div>
     </div>
