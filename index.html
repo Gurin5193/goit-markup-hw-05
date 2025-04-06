@@ -27,6 +27,7 @@
           <a class="logo-header" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
+
           <ul class="list-nav">
             <li class="item-nav">
               <a class="link-nav underline" href="./index.html">Studio</a>
@@ -39,6 +40,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="contacts">
           <ul class="list-contacts">
             <li class="item-contacts">
@@ -420,7 +422,7 @@
           </p>
         </div>
         <div class="social-media-wrapper">
-          <p class="text-footer-media text">Social media</p>
+          <p class="text-footer-media">Social media</p>
           <ul class="list-icon-footer">
             <li class="item-icon-footer">
               <a href="" class="social-icon-footer">
@@ -451,6 +453,29 @@
             </li>
           </ul>
         </div>
+
+        <div class="social-subscribe-wrapper">
+          <p class="text-footer-media text-footer-media-subscribe">Subscribe</p>
+
+          <form class="form-footer">
+            <label for="useremail" class="modal-label-footer"></label>
+            <input
+              type="email"
+              class="modal-input-footer"
+              name="useremail"
+              id="useremail"
+              autocomplete="email"
+              required
+              placeholder="E-mail"
+            />
+          </form>
+        </div>
+        <button class="btn-subscribe" type="submit">
+          Subscribe
+          <svg class="svg-subscribe" width="24" height="20">
+            <use href="./images/icons.svg#icon-send"></use>
+          </svg>
+        </button>
       </div>
     </footer>
     <!--Modal window-->
@@ -464,11 +489,9 @@
 
         <form name="modal">
           <fieldset class="fieldset-input">
-            <legend class="legend-title">
-              <p class="title-modal">
-                Leave your contacts and we will call you back
-              </p>
-            </legend>
+            <p class="title-modal">
+              Leave your contacts and we will call you back
+            </p>
 
             <div class="label-input-wrapper">
               <label for="username" class="modal-label">Name</label>
@@ -547,7 +570,7 @@
                   ><svg class="svg-modal-span" width="10" height="8">
                     <use href="./images/icons.svg#icon-Vector"></use></svg
                 ></span>
-                I accept the terms and conditions of the
+                I accept the terms and conditions of the&nbsp;
                 <a href="" class="modal-label-polici">Privacy Policy</a></label
               >
             </div>

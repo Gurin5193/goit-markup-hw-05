@@ -457,6 +457,67 @@ img {
   background-color: #31d0aa;
 }
 
+.text-footer-media-subscribe {
+  width: 75px;
+}
+
+.modal-input-footer {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding-left: 16px;
+}
+
+.social-media-wrapper {
+  margin-right: 80px;
+}
+
+.modal-input-footer::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btn-subscribe {
+  gap: 16px;
+  min-height: 40px;
+  min-width: 165px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: #31d0aa;
+}
+
+.social-subscribe-wrapper {
+  margin-right: 24px;
+}
+
+.svg-subscribe {
+  fill: #ffffff;
+  margin-left: 16px;
+}
+
 /*Modal window*/
 .modal-ovelay-wrapper {
   width: 100%;
@@ -464,7 +525,15 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
-  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal-wrapper {
@@ -514,9 +583,6 @@ img {
   text-align: center;
   color: #2e2f42;
   width: 360px;
-}
-
-.legend-title {
   padding-top: 72px;
   margin-bottom: 16px;
 }
@@ -605,7 +671,7 @@ img {
   color: #4d5ae5;
 }
 
-span {
+.modal-span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -615,14 +681,11 @@ span {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   fill: transparent;
+  margin-bottom: 20px;
 }
 
-.modal-checkbox:checked + .modal-label span {
+.modal-checkbox:checked + .modal-label .modal-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-}
-
-.modal-span {
-  margin-bottom: 20px;
 }
