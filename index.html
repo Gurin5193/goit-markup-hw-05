@@ -487,23 +487,18 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-       
-        
-          <p class="title-modal">
-            Leave your contacts and we will call you back
-          </p>
-           <form name="modal">
-        
-          
+
+        <p class="title-modal">Leave your contacts and we will call you back</p>
+        <form name="modal">
           <div class="label-input-wrapper">
-            <label for="username" class="modal-label">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
 
             <div class="svg-input-wrapper">
               <input
                 type="text"
                 class="modal-input"
-                name="username"
-                id="username"
+                name="user-name"
+                id="user-name"
                 autocomplete="name"
                 required
               />
@@ -549,25 +544,25 @@
             </div>
           </div>
 
-          <div class="label-input-wrapper">
-            <label for="usercomment" class="modal-label">Comment</label>
+          <div class="label-comment-wrapper">
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="userarea"
-              id="usercomment"
+              name="user-comment"
+              id="user-comment"
               class="modal-area"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <div class="label-input-wrapper">
+          <div class="label-polici-wrapper">
             <input
               type="checkbox"
-              name="polici"
-              id="polici"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-checkbox visually-hidden"
               value="true"
             />
-            <label for="polici" class="modal-label"
+            <label for="user-privacy" class="modal-label"
               ><span class="modal-span"
                 ><svg class="svg-modal-span" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use></svg
@@ -576,12 +571,9 @@
               <a href="" class="modal-label-polici">Privacy Policy</a></label
             >
           </div>
-        
-          
 
-        <button class="btn-order" type="submit">Send</button>
-      </form>
-    
+          <button class="btn-order" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
